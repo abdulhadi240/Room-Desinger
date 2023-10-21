@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Hero from "@/components/Hero";
-import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
 import FeaturesTab from "@/components/FeaturesTab";
 import Integration from "@/components/Integration";
@@ -18,7 +17,6 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Brands />
       <Compare/>
       <Feature />
       <FeaturesTab />
