@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import useNameStore from "@/utils/State";
 
 
 
@@ -12,6 +13,7 @@ const Header = () => {
   const [stickyMenu, setStickyMenu] = useState(false);
 
   const pathUrl = usePathname();
+  const{name1,name2,name3} = useNameStore()
 
   // Sticky menu
   const handleStickyMenu = () => {
@@ -34,6 +36,9 @@ const Header = () => {
           : ""
       }`}
     >
+      <div>
+        {name1} ====  {name2} ==== {name3}
+      </div>
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 lg:flex items-center justify-between relative">
         <div className="w-full lg:w-1/4 flex items-center justify-between">
           <a href="/">
