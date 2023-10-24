@@ -34,7 +34,7 @@ const ImageUploader = () => {
   }, [image]);
 
   const imageUrl = image
-    ? `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/Images/images/${image.name}`
+    ? `https://ekndpczqlutxzbglyjxd.supabase.co/storage/v1/object/public/Images/images/${image.name}`
     : null;
 
   return (
