@@ -37,6 +37,7 @@ const ImageUploader = () => {
     ? `https://ekndpczqlutxzbglyjxd.supabase.co/storage/v1/object/public/Images/images/${image.name}`
     : null;
 
+    console.log(imageUrl);
   return (
     <div className="mt-80">
       <input
@@ -48,6 +49,7 @@ const ImageUploader = () => {
       {uploading && <div className="loader">Uploading...</div>}
       {uploadError && <div className="text-red-600">{uploadError}</div>}
       {imageUrl && <Image src={imageUrl} alt="Uploaded" width={500} height={500} />}
+      <div>{imageUrl}</div>
       
     </div>
   );
