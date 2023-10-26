@@ -31,6 +31,11 @@ const nextConfig = {
         hostname: 'www.thehousedesigners.com',
         
       },
+      {
+        protocol: 'https',
+        hostname: 'pbxt.replicate.delivery',
+        
+      },
 
     ],
   },
